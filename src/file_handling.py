@@ -9,8 +9,8 @@ def read_image(image_path):
     Returns:
         画像データを読み込んだ結果
     """
-    img = Image.open(image_path)
-    rgb_img = img.convert('RGB')
+    image = Image.open(image_path)
+    rgb_img = image.convert('RGB')
     return rgb_img
 
 def get_each_pixel_color(img_data):
